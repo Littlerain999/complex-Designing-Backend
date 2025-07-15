@@ -1,0 +1,66 @@
+# Node modules
+node_modules/
+
+# # Logs
+# logs/
+# *.log
+# npm-debug.log*
+# yarn-debug.log*
+# yarn-error.log*
+
+# # Environment variables
+# .env
+
+# # OS-specific files
+# .DS_Store
+# Thumbs.db
+
+# # Dependency directories
+# jspm_packages/
+
+# # Optional npm cache directory
+# .npm/
+
+# # Build output
+# dist/
+# build/
+
+# # Coverage directory (used by testing tools like Jest)
+# coverage/
+
+# # Frontend build artifacts (if using React, Vue, etc.)
+# frontend/node_modules/
+# frontend/build/
+# frontend/dist/
+
+# # VS Code settings
+# .vscode/
+
+# # Temporary files
+# *.tmp
+# *.swp
+# *.swo
+
+# # TypeScript (if you're using it)
+# *.tsbuildinfo
+
+# # PM2 logs
+# pids/
+# *.pid
+# *.seed
+
+# # MongoDB dump files
+# dump/
+
+# # Parcel cache
+# .cache/
+
+# # Next.js build files
+# .next/
+
+# # Firebase cache
+# .firebase/
+
+# # Mac system files
+# .AppleDouble
+# .LSOverride
