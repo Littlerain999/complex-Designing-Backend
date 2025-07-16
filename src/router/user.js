@@ -1,5 +1,6 @@
-const { router } = require("./configs/configurations.js");
+const { router } = require("../configs/configurations.js");
+const { User } = require("../controller/index.js");
 
-router.post("/sign-up", require("../controller/user/sign-up.js"));
+router.post("/sign-up", User.signUp);
 
 module.exports = router;

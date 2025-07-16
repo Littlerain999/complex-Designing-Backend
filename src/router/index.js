@@ -1,4 +1,4 @@
-const { router } = require("./configs/configurations.js");
+const { router } = require("../configs/configurations.js");
 const { routerCls } = require("../class/router.js");
 
 const routers = [

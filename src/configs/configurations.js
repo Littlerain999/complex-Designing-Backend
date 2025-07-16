@@ -2,6 +2,8 @@ const mongoose = require("mongoose");
 const dotenv = require("dotenv");
 const express = require("express");
 const cors = require("cors");
+const Joi = require("joi");
+const Bcrypt = require("bcrypt");
 const router = express.Router();
 const { Schema, model, models, connect} = mongoose;
 const { config } = dotenv;
@@ -17,5 +19,7 @@ module.exports = {
     models,
     connect,
     config,
-    app
+    app,
+    Joi,
+    Bcrypt
 }
