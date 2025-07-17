@@ -1,17 +1,14 @@
+console.clear()
 console.log("")
-console.log("=========================================================================================================")
+console.log("================================================================================")
 console.log("")
 
-const { createConnection } =  require("./functions/connection.js");
-const { app, connect, config, express, cors } = require("./configs/configurations.js");
+const { app } = require("./configuration")
+const connection = require("./database")
+const router = require("./router")
 
-config()
+app.use(router)
 
-app.use(express.json());
-app.use(cors());
-app.use("/api/v1", require("./router/index.js"))
 
-connect(process.env.MONGO_URI)
-    .then(() => console.log("CONNECTION TO DATABASE [200]", createConnection(app)))
-    .catch((err) => console.log("ERROR CONNECTING TO DATABASE [500] ::: ", err));
+connection(app)
 

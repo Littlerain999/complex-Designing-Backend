@@ -1,6 +1,12 @@
-const { Joi } = require("../configs/configurations")
-module.exports = Joi.object({
-    username: Joi.string().min(5).required(),
-    email: Joi.string().required().email(),
-    password: Joi.string().min(8).required()
-});
+const { joi }=require("../configuration")
+module.exports= {
+    signUp: joi.object({
+        username: joi.string().required().min(5),
+        email: joi.string().required().email().valid(),
+        password: joi.string().required().min(8)
+    }),
+    login: joi.object({
+        username: joi.string().required().min(5),
+        password: joi.string().required().min(8)
+    })
+}
