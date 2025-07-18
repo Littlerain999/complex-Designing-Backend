@@ -1,5 +1,4 @@
-const { router, models, compare, sign, jwtSecret } = require("../configuration")
-const validation = require("../validation/user")
+const { router } = require("../configuration")
 
 const controller = require("../controller/user")
 

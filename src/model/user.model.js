@@ -1,4 +1,4 @@
-const { Schema, model, client, admin, models }=require("./configuration")
+const { Schema, model, client, admin, models }=require("../configuration")
 
 module.exports = model("user", new Schema({
     username: {

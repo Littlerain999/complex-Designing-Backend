@@ -9,9 +9,9 @@ dotenv.config()
 
 
 
-const { connect, Schema, model, models }=mongoose
+const { connect, Schema, model, models, Types }=mongoose
 const { hash, compare }=bcrypt
-const { sign }=jwt
+const { sign, verify }=jwt
 
 
 const port = process.env.PORT
@@ -32,8 +32,8 @@ app.use(express.json())
 module.exports = {
     app, port, uri, connect, // for database
     router, // for router
-    Schema, model, client, admin, models, // for models
+    Schema, model, client, admin, models, Types, // for models
     joi, // for validation
     hash, salts, compare, // for encryption
-    sign, jwtSecret, // token
+    sign, jwtSecret, verify // token
 }

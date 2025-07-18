@@ -1,6 +1,7 @@
-const userModel = require("../user.model")
+const userModel = require("../model/user.model")
 const validation = require("../validation/user")
-const { hash, salts } = require("../configuration")
+
+const { hash, salts, models, compare, sign, jwtSecret  } = require("../configuration")
 
 module.exports = {
     signUp: async function(req, res, next) 
